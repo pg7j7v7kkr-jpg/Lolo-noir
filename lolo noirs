@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lolo Noirs - Vietnam</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+    font-family:'Poppins',sans-serif;
+    background:#0f172a;
+    color:white;
+    scroll-behavior:smooth;
+}
+
+/* NAV */
+nav{
+    position:fixed;
+    width:100%;
+    background:rgba(0,0,0,0.7);
+    backdrop-filter:blur(10px);
+    padding:15px;
+    z-index:1000;
+}
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+}
+nav li{margin:0 15px;}
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+}
+nav a:hover{color:#38bdf8;}
+
+/* HEADER */
+header{
+    height:100vh;
+    background:url("https://upload.wikimedia.org/wikipedia/commons/5/5e/Ha_Giang_rice_terraces.jpg") center/cover;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+header h1{
+    background:rgba(0,0,0,0.6);
+    padding:30px;
+    border-radius:10px;
+    animation:fadeIn 2s;
+}
+
+/* SECTIONS */
+section{
+    padding:100px 20px;
+    max-width:1000px;
+    margin:auto;
+}
+
+h2{
+    color:#38bdf8;
+    margin-bottom:20px;
+}
+
+.card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:15px;
+    margin-bottom:30px;
+    transition:0.3s;
+}
+.card:hover{
+    transform:scale(1.02);
+}
+
+img{
+    width:100%;
+    border-radius:10px;
+    margin-top:15px;
+}
+
+/* GRID */
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+/* MAP */
+iframe{
+    width:100%;
+    height:300px;
+    border:none;
+    border-radius:10px;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:40px;
+    background:black;
+}
+
+/* ANIMATION */
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(20px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+/* RESPONSIVE */
+@media(max-width:700px){
+    .grid{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<ul>
+<li><a href="#loc">Localisation</a></li>
+<li><a href="#env">Environnement</a></li>
+<li><a href="#vie">Mode de vie</a></li>
+<li><a href="#valeurs">Valeurs</a></li>
+<li><a href="#religion">Religion</a></li>
+<li><a href="#galerie">Galerie</a></li>
+</ul>
+</nav>
+
+<header>
+<h1>Les Lolo Noirs<br>Peuple du Vietnam</h1>
+</header>
+
+<section id="loc">
+<h2>📍 Localisation</h2>
+<div class="card">
+<p>
+Les Lolo noirs vivent dans le nord du Vietnam, dans les régions montagneuses de Ha Giang et Cao Bang.
+Ce sont des zones isolées, difficiles d’accès.
+</p>
+
+<iframe src="https://www.google.com/maps?q=Ha+Giang,Vietnam&output=embed"></iframe>
+</div>
+</section>
+
+<section id="env">
+<h2>🌿 Environnement</h2>
+<div class="grid">
+<div class="card">
+<p>
+Ils vivent dans un environnement montagneux avec des rizières en terrasses et des forêts.
+</p>
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Rice_terraces_Vietnam.jpg">
+</div>
+
+<div class="card">
+<p>
+Cet isolement leur permet de préserver leur culture traditionnelle.
+</p>
+<img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Ha_Giang_landscape.jpg">
+</div>
+</div>
+</section>
+
+<section id="vie">
+<h2>🏠 Mode de vie</h2>
+<div class="grid">
+<div class="card">
+<p>
+Les maisons sont en bois, parfois sur pilotis. Ils vivent en petits villages.
+</p>
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Traditional_house_Vietnam.jpg">
+</div>
+
+<div class="card">
+<p>
+Ils vivent de l’agriculture (riz, maïs), de l’élevage et de l’artisanat.
+</p>
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Vietnam_ethnic_costume.jpg">
+</div>
+</div>
+</section>
+
+<section id="valeurs">
+<h2>🌍 Valeurs</h2>
+<div class="card">
+<p>
+Les Lolo noirs vivent en clans. La solidarité, la famille et le respect des traditions sont essentiels.
+Le lien avec les ancêtres est très important dans leur culture.
+</p>
+</div>
+</section>
+
+<section id="religion">
+<h2>🙏 Religion</h2>
+<div class="card">
+<p>
+Ils pratiquent le culte des ancêtres et croient aux esprits.
+Des rituels sont réalisés par des chamans avec des objets sacrés.
+</p>
+</div>
+</section>
+
+<section id="galerie">
+<h2>🖼️ Galerie</h2>
+<div class="grid">
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Ha_Giang_rice_terraces.jpg">
+<img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Ha_Giang_landscape.jpg">
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Rice_terraces_Vietnam.jpg">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Vietnam_ethnic_costume.jpg">
+</div>
+</section>
+
+<footer>
+<p>Projet scolaire – Les Lolo Noirs</p>
+</footer>
+
+</body>
+</html>
